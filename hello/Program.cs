@@ -31,9 +31,50 @@ namespace hello
             Console.Write("This is C# !");
             Console.WriteLine("& i'm learning it.");
             Console.WriteLine("this is the input you entered: " + input);
+
+
+            // Typecasting example
+
+            int a = 20;
+            float b = 30.2f; // by default, floating point numbers are double in C# so we need to use 'f' to specify it as float
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+
+            // explicit typecasting from int to float
+            int a1 = (int)3.5; // explicit typecasting from float to int
+            Console.WriteLine(a1);
+
+            // implicit typecasting
+            // char to int to long to float to double
+
+            int x = 2;
+            double y = x; // implicit typecasting promotion from int to double
+            Console.WriteLine(y);
+            // int z = y;
+            // this cannot be done as it cannot be demoted
+            
+            int z = 'Y';
+            // this can be done but it'll show the ASCII value of 'Y' which is 89
+            Console.WriteLine(z);
+
+            //EXPLECIT TYPECASTING
+            int w = (int)3.5; // explicit typecasting from float to int
+            double v = (double)22.6; // explicit typecasting from char to int
+
+
+            //TYPECASTING USING METHODS
+            int L = 33;
+            double m = Convert.ToDouble(L); // using Convert class to convert int to double
+            /*
+             * Conevert class is used to convert data types in C#
+             * Convert.ToInt32() - converts to int
+             * Convert.ToDouble() - converts to double
+             * Convert.ToString() - converts to string
+             * Convert.ToBoolean() - converts to bool
+             */
             Console.ReadLine();
         }
 
     }
 }
-// This is a simple C# program that prints "Hello, World!" to the console.
+// this is a simple C# program that demonstrates the use of variables, data types, typecasting, and input/output in C#.
