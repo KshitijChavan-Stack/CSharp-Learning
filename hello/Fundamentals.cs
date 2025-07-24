@@ -152,6 +152,120 @@ namespace hello
             Console.WriteLine("Hello, \tWorld!"); // prints Hello,     World! (tab space)
 
 
+            //IF-ELSE Example
+            int age1 = 17;
+            if (age1 >= 18)
+            {
+                Console.WriteLine("You are an adult.");
+            }
+            else
+                Console.WriteLine("You are a minor.");
+
+            // Else if Example
+            //int score = 60;
+            //if (score >= 90)
+            //{
+            //    Console.WriteLine("You got an A.");
+            //}
+            //else if (score >= 80)
+            //{
+            //    Console.WriteLine("You got a B.");
+            //}
+            //else if (score >= 70)
+            //{
+            //    Console.WriteLine("You got a C.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Padhai Kar le !.");
+            //}
+
+            // Another Example 
+
+            //bool is_banned = true;
+            //int age2 = 23;
+
+            //if(age2 <= 18)
+            //{
+            //    Console.WriteLine("You are not allowed to enter the club.");
+            //}
+            //else if (is_banned)
+            //{
+            //    Console.WriteLine("You are banned from the club.");
+            //}
+            //else if (age2 > 21 && !is_banned)
+            //{
+            //    Console.WriteLine("You can enter the club.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You can enter the club and drink.");
+            //}
+
+            // Switch Case Example
+
+            //int age2 = 21;
+
+            //switch (age2)
+            //{
+            //    case 18:
+            //        Console.WriteLine("You are 18 years old.");
+            //        break;
+            //    case 20:
+            //        Console.WriteLine("You are 20, make your life");
+            //        break;
+            //    default:
+            //        Console.WriteLine("You are not 18 or 20 years old, KUSH KAAM KARLE");
+            //        break;
+            //}
+
+            // lOOPS In C#          
+
+            // While Loop Example
+
+            int cnt = 0;
+            while (cnt < 5)
+            {
+                Console.WriteLine("1 to 5 while loop iteration: " + cnt);
+                cnt++;
+            }
+
+            // Do-While Loop Example
+            // do-while loop will execute at least once even if the condition is false
+            int count = 0;
+            do
+            {
+                Console.WriteLine("1 to 5 do-while loop iteration: " + count);
+                count++;
+            } while (count < 5);
+
+
+            // For Loop Example
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("1 to 5 for loop iteration: " + i);
+            }
+
+            // Break and Continue Example
+            for (int i = 0; i < 10; i++)
+            {
+                if (i == 5)
+                {
+                    Console.WriteLine("Breaking the loop at i = " + i);
+                    break; // breaks the loop when i is 5
+                }
+                Console.WriteLine("Loop iteration: " + i);
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine("Skipping even number: " + i);
+                    continue; // skips the iteration when i is even
+                }
+                Console.WriteLine("Odd number: " + i);
+            }
             Console.ReadLine();
         }
 
