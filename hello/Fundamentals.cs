@@ -10,9 +10,30 @@ namespace hello
 {
     class Program
     {
+        // Methods / Functions Example
+        // Static keyword is used to define a method that can be called without creating an instance of the class
+        // static is used to make the method as a part of the class itself rather than an instance of the class
+
+        // void means it's a method that does not return any value
+        static void SayHello(string name)
+        {
+            Console.WriteLine("Hello, " + name + "! Welcome to C# programming.");
+        }
+
+        static int average(int a, int b,int c)
+        {
+            // this method takes two integers as input and returns their average
+            return (a + b + c) / 3;
+        }
+
         // Main method is the entry point of the program
         static void Main(string[] args)
         {
+
+            SayHello("jojo"); // calling the SayHello method 
+
+            average(10, 20, 22); // calling the average method
+
             // Variables are used to store data that can be used later in the program.
             int jojo_age = 22; // integer variable
 
@@ -266,6 +287,7 @@ namespace hello
                 }
                 Console.WriteLine("Odd number: " + i);
             }
+
             Console.ReadLine();
         }
 
